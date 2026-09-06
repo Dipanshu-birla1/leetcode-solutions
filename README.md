@@ -34,4 +34,12 @@ Consistently practice DSA, improve problem-solving, and build a strong foundatio
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0001-two-sum) |
+## String
+|  |
+| ------- |
+| [0115-distinct-subsequences](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0115-distinct-subsequences) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0115-distinct-subsequences](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0115-distinct-subsequences) |
 <!---LeetCode Topics End-->
