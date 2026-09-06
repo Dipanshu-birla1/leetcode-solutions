@@ -47,6 +47,7 @@ Consistently practice DSA, improve problem-solving, and build a strong foundatio
 |  |
 | ------- |
 | [0412-fizz-buzz](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0412-fizz-buzz) |
+| [1523-count-odd-numbers-in-an-interval-range](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1523-count-odd-numbers-in-an-interval-range) |
 ## Simulation
 |  |
 | ------- |
