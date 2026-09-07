@@ -41,10 +41,12 @@ Consistently practice DSA, improve problem-solving, and build a strong foundatio
 | ------- |
 | [0115-distinct-subsequences](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0115-distinct-subsequences) |
 | [0412-fizz-buzz](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0412-fizz-buzz) |
+| [0940-distinct-subsequences-ii](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0940-distinct-subsequences-ii) |
 ## Dynamic Programming
 |  |
 | ------- |
 | [0115-distinct-subsequences](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0115-distinct-subsequences) |
+| [0940-distinct-subsequences-ii](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0940-distinct-subsequences-ii) |
 ## Math
 |  |
 | ------- |
