@@ -56,6 +56,7 @@ Consistently practice DSA, improve problem-solving, and build a strong foundatio
 | [1281-subtract-the-product-and-sum-of-digits-of-an-integer](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1281-subtract-the-product-and-sum-of-digits-of-an-integer) |
 | [1523-count-odd-numbers-in-an-interval-range](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1523-count-odd-numbers-in-an-interval-range) |
 | [2520-count-the-digits-that-divide-a-number](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/2520-count-the-digits-that-divide-a-number) |
+| [3870-count-commas-in-range](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/3870-count-commas-in-range) |
 ## Simulation
 |  |
 | ------- |
