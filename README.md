@@ -57,6 +57,7 @@ Consistently practice DSA, improve problem-solving, and build a strong foundatio
 | [1523-count-odd-numbers-in-an-interval-range](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1523-count-odd-numbers-in-an-interval-range) |
 | [2520-count-the-digits-that-divide-a-number](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/2520-count-the-digits-that-divide-a-number) |
 | [3870-count-commas-in-range](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/3870-count-commas-in-range) |
+| [3871-count-commas-in-range-ii](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/3871-count-commas-in-range-ii) |
 ## Simulation
 |  |
 | ------- |
