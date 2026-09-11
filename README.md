@@ -32,11 +32,13 @@ Consistently practice DSA, improve problem-solving, and build a strong foundatio
 | [0001-two-sum](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0001-two-sum) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1431-kids-with-the-greatest-number-of-candies](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1431-kids-with-the-greatest-number-of-candies) |
+| [3483-unique-3-digit-even-numbers](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/3483-unique-3-digit-even-numbers) |
 ## Hash Table
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0001-two-sum) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
+| [3483-unique-3-digit-even-numbers](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/3483-unique-3-digit-even-numbers) |
 ## String
 |  |
 | ------- |
@@ -82,4 +84,12 @@ Consistently practice DSA, improve problem-solving, and build a strong foundatio
 |  |
 | ------- |
 | [2265-count-nodes-equal-to-average-of-subtree](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/2265-count-nodes-equal-to-average-of-subtree) |
+## Recursion
+|  |
+| ------- |
+| [3483-unique-3-digit-even-numbers](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/3483-unique-3-digit-even-numbers) |
+## Enumeration
+|  |
+| ------- |
+| [3483-unique-3-digit-even-numbers](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/3483-unique-3-digit-even-numbers) |
 <!---LeetCode Topics End-->
