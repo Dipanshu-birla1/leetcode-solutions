@@ -32,6 +32,7 @@ Consistently practice DSA, improve problem-solving, and build a strong foundatio
 | [0001-two-sum](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0001-two-sum) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1431-kids-with-the-greatest-number-of-candies](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1431-kids-with-the-greatest-number-of-candies) |
+| [3414-maximum-score-of-non-overlapping-intervals](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/3414-maximum-score-of-non-overlapping-intervals) |
 | [3483-unique-3-digit-even-numbers](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/3483-unique-3-digit-even-numbers) |
 ## Hash Table
 |  |
@@ -50,6 +51,7 @@ Consistently practice DSA, improve problem-solving, and build a strong foundatio
 | ------- |
 | [0115-distinct-subsequences](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0115-distinct-subsequences) |
 | [0940-distinct-subsequences-ii](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0940-distinct-subsequences-ii) |
+| [3414-maximum-score-of-non-overlapping-intervals](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/3414-maximum-score-of-non-overlapping-intervals) |
 ## Math
 |  |
 | ------- |
@@ -68,6 +70,7 @@ Consistently practice DSA, improve problem-solving, and build a strong foundatio
 |  |
 | ------- |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
+| [3414-maximum-score-of-non-overlapping-intervals](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/3414-maximum-score-of-non-overlapping-intervals) |
 ## Counting Sort
 |  |
 | ------- |
@@ -92,4 +95,8 @@ Consistently practice DSA, improve problem-solving, and build a strong foundatio
 |  |
 | ------- |
 | [3483-unique-3-digit-even-numbers](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/3483-unique-3-digit-even-numbers) |
+## Binary Search
+|  |
+| ------- |
+| [3414-maximum-score-of-non-overlapping-intervals](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/3414-maximum-score-of-non-overlapping-intervals) |
 <!---LeetCode Topics End-->
