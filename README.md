@@ -30,6 +30,7 @@ Consistently practice DSA, improve problem-solving, and build a strong foundatio
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0001-two-sum) |
+| [0835-image-overlap](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0835-image-overlap) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1431-kids-with-the-greatest-number-of-candies](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1431-kids-with-the-greatest-number-of-candies) |
 | [3414-maximum-score-of-non-overlapping-intervals](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/3414-maximum-score-of-non-overlapping-intervals) |
@@ -99,4 +100,8 @@ Consistently practice DSA, improve problem-solving, and build a strong foundatio
 |  |
 | ------- |
 | [3414-maximum-score-of-non-overlapping-intervals](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/3414-maximum-score-of-non-overlapping-intervals) |
+## Matrix
+|  |
+| ------- |
+| [0835-image-overlap](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0835-image-overlap) |
 <!---LeetCode Topics End-->
