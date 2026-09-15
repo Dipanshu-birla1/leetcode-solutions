@@ -47,11 +47,13 @@ Consistently practice DSA, improve problem-solving, and build a strong foundatio
 | [0115-distinct-subsequences](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0115-distinct-subsequences) |
 | [0412-fizz-buzz](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0412-fizz-buzz) |
 | [0940-distinct-subsequences-ii](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0940-distinct-subsequences-ii) |
+| [2472-maximum-number-of-non-overlapping-palindrome-substrings](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/2472-maximum-number-of-non-overlapping-palindrome-substrings) |
 ## Dynamic Programming
 |  |
 | ------- |
 | [0115-distinct-subsequences](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0115-distinct-subsequences) |
 | [0940-distinct-subsequences-ii](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0940-distinct-subsequences-ii) |
+| [2472-maximum-number-of-non-overlapping-palindrome-substrings](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/2472-maximum-number-of-non-overlapping-palindrome-substrings) |
 | [3414-maximum-score-of-non-overlapping-intervals](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/3414-maximum-score-of-non-overlapping-intervals) |
 ## Math
 |  |
@@ -109,4 +111,12 @@ Consistently practice DSA, improve problem-solving, and build a strong foundatio
 |  |
 | ------- |
 | [0836-rectangle-overlap](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0836-rectangle-overlap) |
+## Two Pointers
+|  |
+| ------- |
+| [2472-maximum-number-of-non-overlapping-palindrome-substrings](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/2472-maximum-number-of-non-overlapping-palindrome-substrings) |
+## Greedy
+|  |
+| ------- |
+| [2472-maximum-number-of-non-overlapping-palindrome-substrings](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/2472-maximum-number-of-non-overlapping-palindrome-substrings) |
 <!---LeetCode Topics End-->
