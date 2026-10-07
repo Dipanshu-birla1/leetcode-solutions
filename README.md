@@ -60,6 +60,7 @@ Consistently practice DSA, improve problem-solving, and build a strong foundatio
 | [0022-generate-parentheses](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0022-generate-parentheses) |
 | [0032-longest-valid-parentheses](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0032-longest-valid-parentheses) |
 | [0115-distinct-subsequences](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0115-distinct-subsequences) |
+| [0301-remove-invalid-parentheses](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0301-remove-invalid-parentheses) |
 | [0412-fizz-buzz](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0412-fizz-buzz) |
 | [0678-valid-parenthesis-string](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0678-valid-parenthesis-string) |
 | [0856-score-of-parentheses](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0856-score-of-parentheses) |
@@ -191,6 +192,7 @@ Consistently practice DSA, improve problem-solving, and build a strong foundatio
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0022-generate-parentheses) |
+| [0301-remove-invalid-parentheses](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0301-remove-invalid-parentheses) |
 | [1096-brace-expansion-ii](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1096-brace-expansion-ii) |
 ## Stack
 |  |
@@ -207,6 +209,7 @@ Consistently practice DSA, improve problem-solving, and build a strong foundatio
 ## Breadth-First Search
 |  |
 | ------- |
+| [0301-remove-invalid-parentheses](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0301-remove-invalid-parentheses) |
 | [1096-brace-expansion-ii](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1096-brace-expansion-ii) |
 ## Bracket Sequences
 |  |
