@@ -90,6 +90,7 @@ Consistently practice DSA, improve problem-solving, and build a strong foundatio
 | [1807-evaluate-the-bracket-pairs-of-a-string](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1807-evaluate-the-bracket-pairs-of-a-string) |
 | [2472-maximum-number-of-non-overlapping-palindrome-substrings](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/2472-maximum-number-of-non-overlapping-palindrome-substrings) |
 | [3498-reverse-degree-of-a-string](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/3498-reverse-degree-of-a-string) |
+| [3863-minimum-operations-to-sort-a-string](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/3863-minimum-operations-to-sort-a-string) |
 ## Dynamic Programming
 |  |
 | ------- |
