@@ -1,21 +1,20 @@
-
 class Solution:
     def minOperations(self, s: str) -> int:
-        n = len(s)
 
-        if s == ''.join(sorted(s)):
-            return 0
+        if len(s) == 2 and s[0] > s[1]:
+            return -1                       #  ans = -1
 
-        if n == 2:
-            return -1
+        for ch1, ch2 in pairwise(s):
+            if ch1 > ch2: break
+        else: return 0                      #   ans = 0
 
-        mn = min(s)
-        mx = max(s)
+        mn, mx = min(s[1:-1]), max(s[1:-1])
+        lft, rgt = s[0], s[~0]
 
-        if s[0] == mn or s[-1] == mx:
-            return 1
+        if lft <= min(rgt, mn) or rgt >= max(lft, mx):
+            return 1                        #   ans = 1
 
-        if mn in s[1:-1] or mx in s[1:-1]:
-            return 2
+        elif rgt >= mn or lft <= mx:
+            return 2                        #   ans = 2
 
-        return 3
+        else: return 3                      #   ans = 3
