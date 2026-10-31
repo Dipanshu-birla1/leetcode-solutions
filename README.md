@@ -125,6 +125,7 @@ Consistently practice DSA, improve problem-solving, and build a strong foundatio
 | ------- |
 | [0009-palindrome-number](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0009-palindrome-number) |
 | [0231-power-of-two](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0231-power-of-two) |
+| [0326-power-of-three](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0326-power-of-three) |
 | [0412-fizz-buzz](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0412-fizz-buzz) |
 | [0509-fibonacci-number](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0509-fibonacci-number) |
 | [0836-rectangle-overlap](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0836-rectangle-overlap) |
@@ -186,6 +187,7 @@ Consistently practice DSA, improve problem-solving, and build a strong foundatio
 |  |
 | ------- |
 | [0231-power-of-two](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0231-power-of-two) |
+| [0326-power-of-three](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0326-power-of-three) |
 | [0509-fibonacci-number](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0509-fibonacci-number) |
 | [3483-unique-3-digit-even-numbers](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/3483-unique-3-digit-even-numbers) |
 ## Enumeration
