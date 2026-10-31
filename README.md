@@ -110,6 +110,7 @@ Consistently practice DSA, improve problem-solving, and build a strong foundatio
 | [0509-fibonacci-number](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0509-fibonacci-number) |
 | [0678-valid-parenthesis-string](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0678-valid-parenthesis-string) |
 | [0940-distinct-subsequences-ii](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0940-distinct-subsequences-ii) |
+| [1137-n-th-tribonacci-number](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1137-n-th-tribonacci-number) |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum) |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
@@ -126,6 +127,7 @@ Consistently practice DSA, improve problem-solving, and build a strong foundatio
 | [0412-fizz-buzz](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0412-fizz-buzz) |
 | [0509-fibonacci-number](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0509-fibonacci-number) |
 | [0836-rectangle-overlap](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0836-rectangle-overlap) |
+| [1137-n-th-tribonacci-number](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1137-n-th-tribonacci-number) |
 | [1281-subtract-the-product-and-sum-of-digits-of-an-integer](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1281-subtract-the-product-and-sum-of-digits-of-an-integer) |
 | [1401-circle-and-rectangle-overlapping](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1401-circle-and-rectangle-overlapping) |
 | [1523-count-odd-numbers-in-an-interval-range](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1523-count-odd-numbers-in-an-interval-range) |
@@ -296,6 +298,7 @@ Consistently practice DSA, improve problem-solving, and build a strong foundatio
 |  |
 | ------- |
 | [0509-fibonacci-number](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0509-fibonacci-number) |
+| [1137-n-th-tribonacci-number](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1137-n-th-tribonacci-number) |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
 ## Heap (Priority Queue)
 |  |
