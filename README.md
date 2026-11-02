@@ -31,6 +31,7 @@ Consistently practice DSA, improve problem-solving, and build a strong foundatio
 | ------- |
 | [0001-two-sum](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0001-two-sum) |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0453-minimum-moves-to-equal-array-elements) |
+| [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [0835-image-overlap](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0835-image-overlap) |
 | [1254-number-of-closed-islands](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1254-number-of-closed-islands) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
@@ -130,6 +131,7 @@ Consistently practice DSA, improve problem-solving, and build a strong foundatio
 | [0326-power-of-three](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0326-power-of-three) |
 | [0412-fizz-buzz](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0412-fizz-buzz) |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0453-minimum-moves-to-equal-array-elements) |
+| [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [0509-fibonacci-number](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0509-fibonacci-number) |
 | [0836-rectangle-overlap](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0836-rectangle-overlap) |
 | [1137-n-th-tribonacci-number](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1137-n-th-tribonacci-number) |
@@ -155,6 +157,7 @@ Consistently practice DSA, improve problem-solving, and build a strong foundatio
 ## Sorting
 |  |
 | ------- |
+| [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [1096-brace-expansion-ii](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1096-brace-expansion-ii) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1520-maximum-number-of-non-overlapping-substrings) |
