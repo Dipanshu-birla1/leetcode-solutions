@@ -1,145 +1,94 @@
-
 from typing import List
-from collections import Counter
-import heapq
-
-
-class DualHeap:
-    def __init__(self):
-        self.small = []
-        self.large = []
-        self.delayed = Counter()
-
-        self.small_size = 0
-        self.large_size = 0
-
-        self.small_sum = 0
-        self.large_sum = 0
-
-    def prune(self, heap, sign):
-        while heap:
-            num = sign * heap[0]
-
-            if self.delayed[num] > 0:
-                self.delayed[num] -= 1
-
-                if self.delayed[num] == 0:
-                    del self.delayed[num]
-
-                heapq.heappop(heap)
-            else:
-                break
-
-    def balance(self):
-        if self.small_size > self.large_size + 1:
-            self.prune(self.small, -1)
-
-            num = -heapq.heappop(self.small)
-            heapq.heappush(self.large, num)
-
-            self.small_size -= 1
-            self.large_size += 1
-
-            self.small_sum -= num
-            self.large_sum += num
-
-            self.prune(self.small, -1)
-
-        elif self.small_size < self.large_size:
-            self.prune(self.large, 1)
-
-            num = heapq.heappop(self.large)
-            heapq.heappush(self.small, -num)
-
-            self.large_size -= 1
-            self.small_size += 1
-
-            self.large_sum -= num
-            self.small_sum += num
-
-            self.prune(self.large, 1)
-
-    def add(self, num):
-        self.prune(self.small, -1)
-        self.prune(self.large, 1)
-
-        if not self.small or num <= -self.small[0]:
-            heapq.heappush(self.small, -num)
-            self.small_size += 1
-            self.small_sum += num
-        else:
-            heapq.heappush(self.large, num)
-            self.large_size += 1
-            self.large_sum += num
-
-        self.balance()
-
-    def remove(self, num):
-        self.prune(self.small, -1)
-        self.prune(self.large, 1)
-
-        self.delayed[num] += 1
-
-        if num <= -self.small[0]:
-            self.small_size -= 1
-            self.small_sum -= num
-
-            if num == -self.small[0]:
-                self.prune(self.small, -1)
-        else:
-            self.large_size -= 1
-            self.large_sum -= num
-
-            if self.large and num == self.large[0]:
-                self.prune(self.large, 1)
-
-        self.balance()
-
-    def get_cost(self):
-        self.prune(self.small, -1)
-        self.prune(self.large, 1)
-
-        median = -self.small[0]
-
-        left_cost = median * self.small_size - self.small_sum
-        right_cost = self.large_sum - median * self.large_size
-
-        return left_cost + right_cost
+from heapq import heappush, heappop
+from collections import defaultdict
+import numpy as np
 
 
 class Solution:
     def minOperations(self, nums: List[int], x: int, k: int) -> int:
-
         n = len(nums)
+        small = []   # max-heap (negated) : lower half
+        large = []   # min-heap : upper half
+        delayed = defaultdict(int)
+        sSize = 0
+        lSize = 0
+        sSum = 0
+        lSum = 0
+        cost = [0] * (n - x + 1)
 
-        # Calculate minimum cost of every window of size x
-        dh = DualHeap()
-        costs = []
+        def prune_small():
+            nonlocal small
+            while small:
+                v = -small[0]
+                if delayed[v] > 0:
+                    delayed[v] -= 1
+                    heappop(small)
+                else:
+                    break
+
+        def prune_large():
+            while large:
+                v = large[0]
+                if delayed[v] > 0:
+                    delayed[v] -= 1
+                    heappop(large)
+                else:
+                    break
+
+        def balance():
+            nonlocal sSize, lSize, sSum, lSum
+            while sSize > lSize + 1:
+                v = -heappop(small)
+                sSize -= 1
+                sSum -= v
+                heappush(large, v)
+                lSize += 1
+                lSum += v
+                prune_small()
+            while sSize < lSize:
+                v = heappop(large)
+                lSize -= 1
+                lSum -= v
+                heappush(small, -v)
+                sSize += 1
+                sSum += v
+                prune_large()
 
         for i in range(n):
-            dh.add(nums[i])
-
+            v = nums[i]
+            if not small or v <= -small[0]:
+                heappush(small, -v)
+                sSize += 1
+                sSum += v
+            else:
+                heappush(large, v)
+                lSize += 1
+                lSum += v
+            balance()
+            if i >= x:
+                out = nums[i - x]
+                delayed[out] += 1
+                if out <= -small[0]:
+                    sSize -= 1
+                    sSum -= out
+                    if out == -small[0]:
+                        prune_small()
+                else:
+                    lSize -= 1
+                    lSum -= out
+                    if large and out == large[0]:
+                        prune_large()
+                balance()
             if i >= x - 1:
-                costs.append(dh.get_cost())
-                dh.remove(nums[i - x + 1])
+                med = -small[0]
+                cost[i - x + 1] = med * sSize - sSum + lSum - med * lSize
 
-        # DP: minimum cost to select k non-overlapping windows
-        INF = float('inf')
-
-        dp = [[INF] * (k + 1) for _ in range(n + 1)]
-
-        for i in range(n + 1):
-            dp[i][0] = 0
-
-        for i in range(n - 1, -1, -1):
-            for j in range(1, k + 1):
-
-                # Skip current position
-                dp[i][j] = dp[i + 1][j]
-
-                # Select window starting at i
-                if i + x <= n:
-                    take = costs[i] + dp[i + x][j - 1]
-                    dp[i][j] = min(dp[i][j], take)
-
-        return dp[0][k]
+        INF = 1 << 60
+        m = n - x + 1
+        cost_np = np.array(cost, dtype=np.int64)
+        dp_prev = np.zeros(n + 1, dtype=np.int64)
+        for _ in range(k):
+            b = np.full(n + 1, INF, dtype=np.int64)
+            b[x:] = dp_prev[0:m] + cost_np
+            dp_prev = np.minimum.accumulate(b)
+        return int(dp_prev[n])
