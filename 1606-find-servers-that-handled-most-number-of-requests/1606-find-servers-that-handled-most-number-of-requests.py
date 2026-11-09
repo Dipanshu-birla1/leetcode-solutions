@@ -1,68 +1,64 @@
-
-from typing import List
 import heapq
+import itertools
+
+_SERVER_MASK: int = 0x1FFFF
+_SHIFT: int = 17
+
 
 class Solution:
-    def busiestServers(self, k: int, arrival: List[int], load: List[int]) -> List[int]:
-        size = 4 * k
-        tree = [0] * size
+  """Solution for LeetCode 1606: Find Servers Handling Most Requests."""
 
-        def update(node, start, end, idx, val):
-            if start == end:
-                tree[node] = val
-                return
+  def busiestServers(  # pylint: disable=invalid-name
+      self, k: int, arrival: list[int], load: list[int]
+  ) -> list[int]:
+    """Finds the IDs of the busiest servers that handled the most requests.
 
-            mid = (start + end) // 2
+    Bypasses the first min(n, k) requests via the cold-start prefix invariant,
+    packs (end_time, server_id) into a single integer for the busy min-heap,
+    and projects freed servers onto the monotonic virtual ring interval
+    [i, i + k - 1] via i + (s - i) % k.
 
-            if idx <= mid:
-                update(node * 2, start, mid, idx, val)
-            else:
-                update(node * 2 + 1, mid + 1, end, idx, val)
+    Args:
+      k: The number of servers (1 <= k <= 10^5).
+      arrival: Strictly increasing arrival times of requests.
+      load: Processing duration of each request.
 
-            tree[node] = tree[node * 2] + tree[node * 2 + 1]
+    Returns:
+      A list of server IDs that handled the maximum number of requests.
+    """
+    n: int = len(arrival)
+    if n <= k:
+      return list(range(n))
 
-        def find(node, start, end, ql):
-            if end < ql or tree[node] == 0:
-                return -1
+    counts: list[int] = [1] * k
+    busy: list[int] = [
+        ((arrival[i] + load[i]) << _SHIFT) | i for i in range(k)
+    ]
+    heapq.heapify(busy)
+    available: list[int] = []
 
-            if start == end:
-                return start
+    heappop = heapq.heappop
+    heappush = heapq.heappush
 
-            mid = (start + end) // 2
+    for i, (t, d) in enumerate(
+        zip(
+            itertools.islice(arrival, k, None),
+            itertools.islice(load, k, None),
+        ),
+        k,
+    ):
+      limit: int = (t + 1) << _SHIFT
+      while busy and busy[0] < limit:
+        s: int = heappop(busy) & _SERVER_MASK
+        heappush(available, i + (s - i) % k)
 
-            result = find(node * 2, start, mid, ql)
+      if available:
+        s = heappop(available) % k
+        counts[s] += 1
+        heappush(busy, ((t + d) << _SHIFT) | s)
 
-            if result != -1:
-                return result
+    max_reqs: int = max(counts)
+    return [s for s, c in enumerate(counts) if c == max_reqs]
 
-            return find(node * 2 + 1, mid + 1, end, ql)
-
-        for i in range(k):
-            update(1, 0, k - 1, i, 1)
-
-        busy = []
-        count = [0] * k
-
-        for i in range(len(arrival)):
-            time = arrival[i]
-
-            while busy and busy[0][0] <= time:
-                finish, server = heapq.heappop(busy)
-                update(1, 0, k - 1, server, 1)
-
-            if tree[1] == 0:
-                continue
-
-            start = i % k
-            server = find(1, 0, k - 1, start)
-
-            if server == -1:
-                server = find(1, 0, k - 1, 0)
-
-            update(1, 0, k - 1, server, 0)
-
-            count[server] += 1
-            heapq.heappush(busy, (time + load[i], server))
-
-        maximum = max(count)
-        return [i for i in range(k) if count[i] == maximum]
+  # Follows Google style guide snake_case convention as an alias.
+  busiest_servers = busiestServers
