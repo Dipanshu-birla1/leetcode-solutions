@@ -1,45 +1,54 @@
-
 class Solution:
-    def minimumChanges(self, s: str, k: int) -> int:
-        n = len(s)
-        INF = float('inf')
+  def minimumChanges(self, s: str, k: int) -> int:
+    n = len(s)
+    
+    # Calculates the dynamic programming state.
+    # `start` is the suffix start, and `k1` is the number of parts
+    # to split it into.
+    @functools.cache
+    def DP(start, k1):
+      # If there is only 1 part, there is no splitting (pivot),
+      # so the answer is the number of changes to make the whole
+      # suffix a semi-palindrome.
+      if k1 == 1:
+        return toSemiPalindrome(start, n)
+      
+      # Try every way to split the suffix into a part followed by
+      # another suffix.
+      return min(
+        toSemiPalindrome(start, pivot) + DP(pivot, k1 - 1)
+        # There is an implicit rule that no part must be shorter than 2.
+        # We use only such pivots that won't violate the rule.
+        for pivot in range(start + 2, n - (k1 - 1) * 2 + 1)
+      )
+    
+    # Counts the minimum number of changes to make an `s` substring
+    # be a semi-palindrome.
+    @functools.cache
+    def toSemiPalindrome(start, end):
+      minChanges = math.inf
+      length = end - start
+      
+      # Try each valid `d`. Notice that `length` itself is not a valid `d`,
+      # because otherwise any string would be a semi-palindrome
+      for d in range(1, length):
+        if length % d != 0:
+          continue
 
-        cost = [[INF] * (n + 1) for _ in range(n)]
+        changeCount = 0
+        subLength = length // d # Length of the palindrome for each offset
 
-        for length in range(2, n + 1):
-            for d in range(1, length):
-                if length % d != 0:
-                    continue
+        for offset in range(d):
+          # `i` is the distance from the edges of the palindrome
+          for i in range(subLength // 2):
+            if (
+              s[start + offset + d * i] !=
+              s[start + offset + d * (subLength - i - 1)]
+            ):
+              changeCount += 1
 
-                groups = length // d
-                if groups < 2:
-                    continue
+        minChanges = min(minChanges, changeCount)
 
-                for left in range(n - length + 1):
-                    changes = 0
+      return minChanges
 
-                    for r in range(d):
-                        for q in range(groups // 2):
-                            a = left + r + q * d
-                            b = left + r + (groups - 1 - q) * d
-
-                            if s[a] != s[b]:
-                                changes += 1
-
-                    right = left + length
-                    cost[left][right] = min(
-                        cost[left][right], changes
-                    )
-
-        dp = [[INF] * (n + 1) for _ in range(k + 1)]
-        dp[0][0] = 0
-
-        for p in range(1, k + 1):
-            for i in range(2 * p, n + 1):
-                for j in range(2 * (p - 1), i - 1):
-                    dp[p][i] = min(
-                        dp[p][i],
-                        dp[p - 1][j] + cost[j][i]
-                    )
-
-        return dp[k][n]
+    return DP(0, k)
