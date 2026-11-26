@@ -176,6 +176,7 @@ Consistently practice DSA, improve problem-solving, and build a strong foundatio
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
 | [2409-count-days-spent-together](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/2409-count-days-spent-together) |
 | [2520-count-the-digits-that-divide-a-number](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/2520-count-the-digits-that-divide-a-number) |
+| [3360-stone-removal-game](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/3360-stone-removal-game) |
 | [3411-maximum-subarray-with-equal-products](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/3411-maximum-subarray-with-equal-products) |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/3505-minimum-operations-to-make-elements-within-k-subarrays-equal) |
 | [3524-find-x-value-of-array-i](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/3524-find-x-value-of-array-i) |
@@ -193,6 +194,7 @@ Consistently practice DSA, improve problem-solving, and build a strong foundatio
 | [0412-fizz-buzz](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/0412-fizz-buzz) |
 | [1606-find-servers-that-handled-most-number-of-requests](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/1606-find-servers-that-handled-most-number-of-requests) |
 | [2243-calculate-digit-sum-of-a-string](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/2243-calculate-digit-sum-of-a-string) |
+| [3360-stone-removal-game](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/3360-stone-removal-game) |
 | [3498-reverse-degree-of-a-string](https://github.com/Dipanshu-birla1/leetcode-solutions/tree/master/3498-reverse-degree-of-a-string) |
 ## Sorting
 |  |
