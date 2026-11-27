@@ -1,29 +1,26 @@
 class Solution:
-    def maximumSaleItems(self, items: List[List[int]], budget: int) -> int:
-        n = len(items)
-        mx = max(f for f, p in items)
+    def maximumSaleItems(self, items: list[list[int]], budget: int) -> int:
+        max_factor = max(p[0] for p in items)
+        cnt_factor = [0] * (max_factor + 1)
+        for factor, _ in items:
+            cnt_factor[factor] += 1
 
-        freq = [0] * (mx + 1)
-        for f, p in items:
-            freq[f] += 1
+        cnt_multi = [0] * (max_factor + 1)
+        f = [0] * (budget + 1)
+        min_price = inf
+        sum_price = 0
 
-        count = [0] * (mx + 1)
+        for factor, price in items:
+            min_price = min(min_price, price)
 
-        for f in range(1, mx + 1):
-            for m in range(f, mx + 1, f):
-                count[f] += freq[m]
+            if cnt_multi[factor] == 0:
+                for j in range(factor, max_factor + 1, factor):
+                    cnt_multi[factor] += cnt_factor[j]
+            cnt = cnt_multi[factor]
 
-        min_price = min(p for f, p in items)
+            sum_price = min(sum_price + price, budget)
+            for j in range(sum_price, price - 1, -1):
+                v = f[j - price] + cnt
+                if v > f[j]: f[j] = v
 
-        dp = [0] * (budget + 1)
-
-        for f, p in items:
-            value = count[f]
-
-            for b in range(budget, p - 1, -1):
-                dp[b] = max(dp[b], dp[b - p] + value)
-
-        return max(
-            dp[b] + (budget - b) // min_price
-            for b in range(budget + 1)
-        )
+        return max(fi + (budget - i) // min_price for i, fi in enumerate(f))
